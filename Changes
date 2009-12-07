@@ -1,5 +1,9 @@
 Revision history for Perl extension App-Benchmark
 
+0.04  Mon 2009.12.07 22:24:48 CET (Marcel Gruenauer <marcel@cpan.org>)
+     - reduced dependencies using author tests
+     - better dist engineering (INSTALL, README, README.mkdn etc.)
+
 0.03  Fri Nov  7 20:44:26 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
      - require perl 5.8 because 5.6.2's Benchmark.pm doesn't have a
        :hireswallclock
