@@ -1,16 +1,24 @@
 Revision history for Perl extension App-Benchmark
 
+1.100870  2010-03-28 10:17:21 Europe/Vienna
+    - converted the distribution to Dist::Zilla-style
+    - now uses Capture::Tiny instead of IO::Capture::Stdout
+    - removed unused variable
+
+0.05  Wed 2010.02.10 00:02:19 CET (Marcel Gruenauer <marcel@cpan.org>)
+    - releng
+
 0.04  Mon 2009.12.07 22:24:48 CET (Marcel Gruenauer <marcel@cpan.org>)
-     - reduced dependencies using author tests
-     - better dist engineering (INSTALL, README, README.mkdn etc.)
+    - reduced dependencies using author tests
+    - better dist engineering (INSTALL, README, README.mkdn etc.)
 
 0.03  Fri Nov  7 20:44:26 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - require perl 5.8 because 5.6.2's Benchmark.pm doesn't have a
-       :hireswallclock
+    - require perl 5.8 because 5.6.2's Benchmark.pm doesn't have a
+      :hireswallclock
 
 0.02  Sun Nov  2 23:55:40 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - documented that rjbs came up with the idea
-     - export benchmark_diag() by default now
+    - documented that rjbs came up with the idea
+    - export benchmark_diag() by default now
 
 0.01  Sun Nov  2 21:31:53 CET 2008 (Marcel Gruenauer <marcel@cpan.org>)
-     - original version
+    - original version

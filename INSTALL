@@ -1,16 +1,10 @@
+
 This is the Perl distribution App-Benchmark.
-
-## Description
-
-This module makes it easy to run your benchmarks in a distribution's test
-suite. This way you just have to look at the CPAN testers reports to see your
-benchmarks being run on many different platforms using many different versions
-of perl.
 
 ## Installation
 
-App-Benchmark installation is straightforward. If your CPAN shell is
-set up, you should just be able to do
+App-Benchmark installation is straightforward.
+If your CPAN shell is set up, you should just be able to do
 
     % cpan App::Benchmark
 
@@ -25,10 +19,9 @@ Then install it:
 
 ## Documentation
 
-App-Benchmark documentation is available as in POD. So you can do:
+App-Benchmark documentation is available as in POD.
+So you can do:
 
     % perldoc App::Benchmark
 
-to read the documentation online with your favorite pager.
-
-Marcel Gruenauer
+to read the documentation with your favorite pager.
