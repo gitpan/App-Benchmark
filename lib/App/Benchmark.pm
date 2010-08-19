@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package App::Benchmark;
-our $VERSION = '1.100870';
+BEGIN {
+  $App::Benchmark::VERSION = '1.102310';
+}
 # ABSTRACT: Output your benchmarks as test diagnostics
 
 use Test::More;
@@ -17,7 +19,7 @@ sub benchmark_diag {
     my $stdout = capture {
         cmpthese(timethese($iterations, $benchmark_hash));
     };
-    note $stdout;
+    diag $stdout;
     plan tests => 1;
     pass('benchmark');
 }
@@ -27,13 +29,9 @@ sub benchmark_diag {
 __END__
 =pod
 
-=head1 NAME
-
-App::Benchmark - Output your benchmarks as test diagnostics
-
 =head1 VERSION
 
-version 1.100870
+version 1.102310
 
 =head1 SYNOPSIS
 
@@ -75,7 +73,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=App-Benchmark>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
@@ -91,7 +89,7 @@ and github infrastructure.
 
 =head1 AUTHOR
 
-  Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer <marcel@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

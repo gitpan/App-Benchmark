@@ -1,8 +1,5 @@
-NAME
-    App::Benchmark - Output your benchmarks as test diagnostics
-
 VERSION
-    version 1.100870
+    version 1.102310
 
 SYNOPSIS
         # This is t/benchmark.t:
@@ -40,7 +37,7 @@ BUGS AND LIMITATIONS
     No bugs have been reported.
 
     Please report any bugs or feature requests through the web interface at
-    <http://rt.cpan.org/Public/Dist/Display.html?Name=App-Benchmark>.
+    <http://rt.cpan.org>.
 
 AVAILABILITY
     The latest version of this module is available from the Comprehensive
@@ -53,7 +50,7 @@ AVAILABILITY
     infrastructure.
 
 AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+    Marcel Gruenauer <marcel@cpan.org>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2008 by Marcel Gruenauer.

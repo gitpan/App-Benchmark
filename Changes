@@ -1,5 +1,9 @@
 Revision history for Perl extension App-Benchmark
 
+1.102310  2010-08-19 10:25:12 Europe/Vienna
+    - benchmarking output is reported with diag(), since with note() it didn't
+      appear anymore
+
 1.100870  2010-03-28 10:17:21 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
     - now uses Capture::Tiny instead of IO::Capture::Stdout
