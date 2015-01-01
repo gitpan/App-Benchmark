@@ -1,8 +1,4 @@
 Revision history for Perl extension App-Benchmark
 
-1.21  Sun Jan  1 23:30:18 CET 2015 (Marcel Gruenauer <marcel@cpan.org>)
-    - keep changing metadata until both git and milla are happy. Might be a
-	  long night.
-
-1.20  Sun Jan  1 23:20:34 CET 2015 (Marcel Gruenauer <marcel@cpan.org>)
+2.00  Sun Jan  1 23:43:55 CET 2015 (Marcel Gruenauer <marcel@cpan.org>)
     - recreated repo with latest version from CPAN

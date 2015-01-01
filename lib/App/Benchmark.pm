@@ -5,7 +5,7 @@ use Test::More;
 use Benchmark qw(cmpthese timethese :hireswallclock);
 use Capture::Tiny qw(capture);
 use Exporter qw(import);
-our $VERSION = '1.21';
+our $VERSION = '2.00';
 our @EXPORT  = qw(benchmark_diag);
 
 sub benchmark_diag {
