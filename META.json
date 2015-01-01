@@ -1,61 +1,68 @@
 {
    "abstract" : "Output your benchmarks as test diagnostics",
    "author" : [
-      "Marcel Gruenauer <marcel@cpan.org>"
+      "The following person is the author of all the files provided in"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "generated_by" : "Dist::Zilla version 5.029, Dist::Milla version v1.0.9, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "App-Benchmark",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "Module::Build::Tiny" : "0.039"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Dist::Milla" : "v1.0.9",
+            "Test::Pod" : "1.41"
          }
       },
       "runtime" : {
          "requires" : {
-            "Benchmark" : 0,
-            "Capture::Tiny" : 0,
-            "Exporter" : 0,
-            "Test::More" : 0,
-            "perl" : "5.008"
+            "Benchmark" : "0",
+            "Capture::Tiny" : "0",
+            "Test::More" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Carp" : 0,
-            "English" : 0,
-            "File::Find" : 0,
-            "File::Temp" : 0,
-            "Scalar::Util" : 0,
-            "Test::More" : "0.94"
+            "Benchmark" : "0"
          }
-      }
-   },
-   "provides" : {
-      "App::Benchmark" : {
-         "file" : "lib/App/Benchmark.pm",
-         "version" : "1.102310"
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "mailto" : "bug-app-benchmark at rt.cpan.org",
-         "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=App-Benchmark"
+         "web" : "https://github.com/marcelgruenauer/App-Benchmark/issues"
       },
-      "homepage" : "http://search.cpan.org/dist/App-Benchmark/",
+      "homepage" : "https://github.com/marcelgruenauer/App-Benchmark",
       "repository" : {
-         "url" : "http://github.com/hanekomu/App-Benchmark"
+         "type" : "git",
+         "url" : "https://github.com/marcelgruenauer/App-Benchmark.git",
+         "web" : "https://github.com/marcelgruenauer/App-Benchmark"
       }
    },
-   "version" : "1.102310"
+   "version" : "1.21",
+   "x_contributors" : [
+      "Marcel Gruenauer <hanekomu@gmail.com>"
+   ]
 }
 

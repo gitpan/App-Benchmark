@@ -1,18 +1,12 @@
-use 5.008;
+package App::Benchmark;
 use strict;
 use warnings;
-
-package App::Benchmark;
-BEGIN {
-  $App::Benchmark::VERSION = '1.102310';
-}
-# ABSTRACT: Output your benchmarks as test diagnostics
-
 use Test::More;
 use Benchmark qw(cmpthese timethese :hireswallclock);
 use Capture::Tiny qw(capture);
 use Exporter qw(import);
-our @EXPORT = ('benchmark_diag');
+our $VERSION = '1.21';
+our @EXPORT  = qw(benchmark_diag);
 
 sub benchmark_diag {
     my ($iterations, $benchmark_hash) = @_;
@@ -24,14 +18,11 @@ sub benchmark_diag {
     pass('benchmark');
 }
 1;
-
-
 __END__
-=pod
 
-=head1 VERSION
+=head1 NAME
 
-version 1.102310
+App::Benchmark - Output your benchmarks as test diagnostics
 
 =head1 SYNOPSIS
 
@@ -64,39 +55,21 @@ Also, a dummy test is being generated to keep the testing framework happy.
 
 This function is exported automatically.
 
-=head1 INSTALLATION
+=head1 AUTHORS
 
-See perlmodinstall for information and options on installing Perl modules.
+The following person is the author of all the files provided in
+this distribution unless explicitly noted otherwise.
 
-=head1 BUGS AND LIMITATIONS
-
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
-
-=head1 AVAILABILITY
-
-The latest version of this module is available from the Comprehensive Perl
-Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/App-Benchmark/>.
-
-The development version lives at
-L<http://github.com/hanekomu/App-Benchmark/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
-
-=head1 AUTHOR
-
-Marcel Gruenauer <marcel@cpan.org>
+Marcel Gruenauer C<< <marcel@cpan.org> >>, L<http://marcelgruenauer.com>
 
 =head1 COPYRIGHT AND LICENSE
+
+The following copyright notice applies to all the files provided in
+this distribution, including binary files, unless explicitly noted
+otherwise.
 
 This software is copyright (c) 2008 by Marcel Gruenauer.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
-
-=cut
 
